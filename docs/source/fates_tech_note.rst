@@ -4798,9 +4798,6 @@ host land model for the purposes of calculating BVOC emissions accurately.
 At present, this capability is only implemented in CLM and is yet to be included in
 other HLMs that use FATES. 
 
-
-
-
 .. raw:: latex
 
    \captionof{table}{Parameters to define the mapping of PFTs in FATES to the MEGAN model }
