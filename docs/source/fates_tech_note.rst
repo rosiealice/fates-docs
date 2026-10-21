@@ -4799,7 +4799,7 @@ At present, this capability is only implemented in CLM and is yet to be included
 other HLMs that use FATES. 
 
 
-\bigskip
+
 
 .. raw:: latex
 
@@ -4812,9 +4812,8 @@ other HLMs that use FATES.
 | :math:`voc_{pftindex,ft}` | Mapping of FATES PFTs to MEGAN PFTs | none  | ft         |
 +---------------------+--------------------------------+-------+------------+
 
-.. raw:: latex
 
-   \bigskip 
+
 
 
 
