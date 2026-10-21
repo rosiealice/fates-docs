@@ -4786,9 +4786,9 @@ module, and instead, when coupled to CLM, uses the default CLM BVOC module,
 which is called MEGAN.  This capability is necessary for coupling FATES with 
 atmospheric chemistry models to study the interactions between BVOC 
 emissions and atmospheric processes. The MEGAN model in CLM is built on the 
-assumption that there is only one kind of vegetation in each patch. In the present implementation of FATES, this assumption is maintained, which simplifies the calculation of BVOC emissions.,
-the BVOC emissions from each patch can be calculated based on the characteristics of the single vegetation type present, and this
-capability only works when in 'No Competition' mode (which incudes FAATS-SP mode).
+assumption that there is only one kind of vegetation in each patch. 
+thus, this capability is only functional when using a 'No Competition' mode 
+(which incudes FAATS-SP mode).
 MEGAN in CLM is congigured and parameterized for a particular set of plant functional types.
 In FATES, we thus include a parameter that maps the PFTs defined by FATES on to the 
 PFTs defined by MEGAN. This parameter is called 'fates_voc_pftindex'.  This is used to define a 
@@ -4796,7 +4796,9 @@ flag for each FATES PFT that indicates the corresponding MEGAN PFT and is passed
 host land model for the purposes of calculating BVOC emissions accurately.
 
 At present, this capability is only implemented in CLM and is yet to be included in
-other HLMs that use FATES. 
+other HLMs that use FATES. In principle a model that can estimate BVOC for mixed 
+vegetation types is necessary to allow utlization of BVOC emissions with 
+dynamic vegetation modes (e.g. the full FATES mode),
 
 .. raw:: latex
 
